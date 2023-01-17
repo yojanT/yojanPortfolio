@@ -19,9 +19,6 @@ header_menu{
     display: flex
 }
 
-main{
-background-clip: ;
-}
 
 .white{
     color: white;
@@ -138,6 +135,9 @@ h2{
     .header{
         background-color: #009ddf;
     }
+    .backmenu{
+        background-color: #009ddf;
+    }
     .portfolio{
 
     }
@@ -163,6 +163,13 @@ h2{
         height: auto;
         width: 100%;
         overflow: hidden;
+        align-items: center;
+    }
+    .main{
+        width: 100%;
+    }
+    .backmenu{
+        background-color: #009ddf;
     }
 .portfolio{
     display: flex;
