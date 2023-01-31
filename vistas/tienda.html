@@ -1,118 +1,194 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIENDA</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-</head>
+<html lang="en"><head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIENDA</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+<!-- Code injected by Five-server -->
+<script async="" data-id="five-server" data-file="d:\WEBFULLSTACK\Clase_0\vistas\tienda.html" type="application/javascript" src="/fiveserver.js"></script>
+<style>      
+    /* Injected by five-server */
+    /*[data-highlight="true"] {
+      border: 1px rgb(90,170,255) solid !important;
+      background-color: rgba(155,215,255,0.5);
+      animation: fadeOutHighlight 1s forwards 0.5s;
+    }
+    img[data-highlight="true"] {
+      filter: sepia(100%) hue-rotate(180deg) saturate(200%);
+      animation: fadeOutHighlightIMG 0.5s forwards 0.5s;
+    }*/
+    @keyframes fadeOutHighlight {
+      from {background-color: rgba(155,215,255,0.5);}
+      to {background-color: rgba(155,215,255,0);}
+    }      
+    @keyframes fadeOutHighlightIMG {
+      0% {filter: sepia(100%) hue-rotate(180deg) saturate(200%);}
+      33% {filter: sepia(66%) hue-rotate(180deg) saturate(100%);}
+      50% {filter: sepia(50%) hue-rotate(90deg) saturate(50%);}
+      66% {filter: sepia(33%) hue-rotate(0deg) saturate(100%);}
+      100% {filter: sepia(0%) hue-rotate(0deg) saturate(100%);}
+    }
+    @keyframes fiveserverInfoPopup {
+      0%   {top:-40px;}
+      15%  {top:4px;}
+      85%  {top:4px;}
+      100% {top:-40px;}
+    }
+    /*smaller*/
+    @media (max-width: 640px) {
+      #fiveserver-info-wrapper {
+        max-width: 98%;
+      }
+      #fiveserver-info {
+        border-radius: 0px;
+      }      
+    }
+
+    </style></head>
 <body>
-    <nav class="navbar navbar-expand-lg backmenu">
-        <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg backmenu">
+      <div class="container-fluid">
 <img src="../img/LOGOMIO.jpg.png" alt="logoheader">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../vistas/portafolio.html">Portafolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../vistas/sobremi.html">Sobre mi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../vistas/tienda.html">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../vistas/contacto.html">Contacto</a>
-              </li>
-            </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../vistas/portafolio.html">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../vistas/sobremi.html">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../vistas/tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../vistas/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <main>
+      <section class="hero">
+          <div class="hero__camiseta1">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/camiseta1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">T-Shirt CHICKEN BLACK</h5>
+                    <p class="card-text">$ 80.000</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
           </div>
-        </div>
-      </nav>
-    <main>
-        <section class="hero">
-            <div class="hero__camiseta1">
-                <img src="../img/camiseta1.png" alt="">
-                <h3>camiseta1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div class="hero__camiseta2">
-                <img src="../img/camiseta2.png" alt="">
-                <h3>camiseta1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div class="hero__camiseta3">
-                <img src="../img/camiseta1.png" alt="">
-                <h3>camiseta1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div class="hero__camiseta4">
-                <img src="../img/camiseta2.png" alt="">
-                <h3>camiseta1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div class="hero__camiseta5">
-                <img src="../img/camiseta1.png" alt="">
-                <h3>camiseta1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div class="hero__camiseta6">
-                <img src="../img/camiseta2.png" alt="">
-                <h3>camiseta1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div class="hero__camiseta7">
-                <img src="../img/camiseta1.png" alt="">
-                <h3>camiseta1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-            <div class="hero__camiseta8">
-                <img src="../img/camiseta2.png" alt="">
-                <h3>camiseta1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
-        </section>
+          <div class="hero__camiseta2">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/camiseta2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">T-Shirt CHICKEN WHITE</h5>
+                    <p class="card-text">$ 80.000</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+          </div>
+          <div class="hero__camiseta3">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/camiseta1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">T-Shirt CHICKEN BLACK</h5>
+                    <p class="card-text">$ 80.000</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+          </div>
+          <div class="hero__camiseta4">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/camiseta2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">T-Shirt CHICKEN WHITE</h5>
+                    <p class="card-text">$ 80.000</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+          </div>
+          <div class="hero__camiseta5">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/camiseta1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">T-Shirt CHICKEN BLACK</h5>
+                    <p class="card-text">$ 80.000</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+          </div>
+          <div class="hero__camiseta6">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/camiseta2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">T-Shirt CHICKEN WHITE</h5>
+                    <p class="card-text">$ 80.000</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+          </div>
+          <div class="hero__camiseta7">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/camiseta2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">T-Shirt CHICKEN BLACK</h5>
+                    <p class="card-text">$ 80.000</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+          </div>
+          <div class="hero__camiseta8">
+              <div class="card" style="width: 18rem;">
+                  <img src="../img/camiseta2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">T-Shirt CHICKEN WHITE</h5>
+                    <p class="card-text">$ 80.000</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+                </div>
+          </div>
+      </section>
 
+  </main>
 
-    </main>
+  <footer class="footer">
+      <div>
+          <h2>Contactar</h2>
+          <ul class="footer__list">
+              <li>Cel:320 8232515</li>
+              <li>correo:thegidsone@gmail.com</li>
+          </ul>
+      </div>
+  
+      <div> 
+          <ul class="footer__container">
+               <div>
+                  <a class="footer__icons" href="https://www.behance.net/elGids"><img src="../img/BEHANCE_ICON.png" alt="Icono_behance"></a>
+              </div>
+              <div>
+                  <a class="footer__icons" href="https://www.instagram.com/elgids/"><img src="../img/INSTAGRAM_ICON.png" alt="Icono_instagram"></a>
+              </div>
+              <div>
+                  <a class="footer__icons" href="https://www.facebook.com/gids.jmnz"><img src="../img/FACEBOOK_ICON.png" alt="Icono_facebook"></a>
+              </div>
+              <div>
+                  <a class="footer__icons" href="https://www.youtube.com/@yojan2315"><img src="../img/YOUTUBE_ICON.png" alt="Icono_youtube"></a>
+              </div>
+              <div>
+                  <a class="footer__icons" href="https://www.behance.net/elGids"><img src="../img/WHATSAPP_ICON.png" alt="Icono_whatsapp"></a>
+              </div>
+          </ul>    
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-
-    <footer class="footer">
-        <div>
-            <h2>Contactar</h2>
-            <ul class="footer__list">
-                <li>Cel:320 8232515</li>
-                <li>correo:thegidsone@gmail.com</li>
-            </ul>
-        </div>
-    
-        <div> 
-            <ul class="footer__container">
-                 <div>
-                    <a class="footer__icons" href="https://www.behance.net/elGids"><img src="../img/BEHANCE_ICON.png" alt="Icono_behance"></a>
-                </div>
-                <div>
-                    <a class="footer__icons" href="https://www.instagram.com/elgids/"><img src="../img/INSTAGRAM_ICON.png" alt="Icono_instagram"></a>
-                </div>
-                <div>
-                    <a class="footer__icons" href="https://www.facebook.com/gids.jmnz"><img src="../img/FACEBOOK_ICON.png" alt="Icono_facebook"></a>
-                </div>
-                <div>
-                    <a class="footer__icons" href="https://www.youtube.com/@yojan2315"><img src="../img/YOUTUBE_ICON.png" alt="Icono_youtube"></a>
-                </div>
-                <div>
-                    <a class="footer__icons" href="https://www.behance.net/elGids"><img src="../img/WHATSAPP_ICON.png" alt="Icono_whatsapp"></a>
-                </div>
-            </ul>    
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
-</html>
+</body></html>
