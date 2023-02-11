@@ -39,49 +39,49 @@
 <body>
     <main>
         <section class="hero">
-            <h1>Contacto</h1>
-            <div class="hero_contacto">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci dignissimos ipsum nulla, iusto praesentium tenetur. Saepe quam voluptatibus assumenda asperiores totam nihil sit hic, placeat mollitia! Eaque nam at sit?</p>
-                <form action="#" method="GET" enctype="multipart/form-data">
-                    <fieldset>
-                        <legend>Información Personal</legend>
-                        <span>Usuario:</span>
-                        <div>
-                            <label for="userperson">Persona</label>
-                            <input type="radio" name="userperson" id="userperson" value="Persona">
-                            <label for="userempresa">Empresa</label>
-                            <input type="radio" name="userperson" id="userperson" value="Empresa">
-                        </div>
-                        <div>
-                            <label for="userName">Nombre:</label>
-                            <input type="text" name="userName" id="userName" required>
-                        </div>
-                        <div>
-                            <label for="userLastName">Apellido:</label>
-                            <input type="text" name="userLastName" id="userLastName" required>
-                        </div>
-                        <div>
-                            <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" required>
-                        </div>
-                        <div>
-                            <label for="typeservice">Servicio</label>
-                            <select name="typeservice" id=typeservices">
-                                <option value="company">Asesoría</option>
-                                <option value="Person">Diseño</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="comentaries">Comentarios:</label>
-                        <textarea name="comentaries" id="" cols="30" rows="10"></textarea>
-                        </div>
-                        <div>
-                            <input type="submit" value="Enviar">
-                            
-                        </div>
-                    </fieldset>
-                    </form>
-            </div>
+            <h1>Conozcámonos</h1>
+        
+            <form action="#" method="GET" enctype="multipart/form-data" class="hero_form">
+                <fieldset>
+                    <legend><h2><strong>Información Personal</strong></h2></legend>
+                    <span>Usuario:</span>
+                    <div>
+                        <label for="userperson">Persona</label>
+                        <input type="radio" name="userperson" id="userperson" value="Persona" class="mb-3">
+                        <label for="userempresa">Empresa</label>
+                        <input type="radio" name="userperson" id="userperson" value="Empresa" class="mb-3">
+                    </div>
+                    <div class="hero_nombre">
+                        <label for="userName" class="form-label">Nombre:</label>
+                        <input type="text" name="userName" id="userName" required class="mb-3">
+                    </div>
+                    <div>
+                        <label for="userLastName">Apellido:</label>
+                        <input type="text" name="userLastName" id="userLastName" required class="mb-3">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="typeservice">Servicio</label>
+                        <select name="typeservice" id=typeservices">
+                            <option value="company">Asesoría</option>
+                            <option value="Person">Diseño</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="comentaries">Comentarios:</label>
+                    <textarea name="comentaries" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="hero_form_containbtn">
+                        <input type="submit" class="hero_form_btn" value="Enviar">
+                        
+                    </div>
+                </fieldset>
+                </form>
+
+               
         </section>
     </main>
     <footer class="footer">

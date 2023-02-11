@@ -33,8 +33,8 @@ h1{
 }
 
 h2{
-    color: black;
-    font-size: 3rem;
+    color: #ffffff;
+    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -54,11 +54,10 @@ h2{
 }
 
 .main{
-    padding: 20rem;
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
 }
 
 .main_sobremi {
@@ -116,9 +115,36 @@ h2{
     align-items: baseline;
     flex-direction: row;
     justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 4rem;
 }
+.hero_title{
+    text-align: center;
+}
+.hero_form{
+    background-color: #009ddf;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.hero_nombre{
+    border-radius: 1rem;
+}
+.hero_form_containbtn{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.hero_form_btn{
+ display: flex;
+ flex-direction: row-reverse;
+  color: #ffffff;
+  background-color: #021016;
+  padding: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+}
+
 .portfolio{
     display: grid;
     grid-template-columns: auto auto;
@@ -130,7 +156,7 @@ h2{
 
 /*media queries o estilos moviles*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1920px) {
     .header{
         background-color: #009ddf;
     }
