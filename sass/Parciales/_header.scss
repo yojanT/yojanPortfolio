@@ -1,0 +1,25 @@
+.header{
+
+    justify-content: space-between;
+    background-color: #009ddf;
+    padding: 2% 5%;
+    align-items: center;
+    max-width: 100%;
+    &_menu{
+        display: flex
+                }
+    &__list{
+     display: flex;
+     text-align: center;
+     gap: 70px;
+     padding-left: 8rem;
+     list-style: none;
+     text-decoration: none;
+           }
+           &__anchor{
+            color: black;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+        }
+    }  

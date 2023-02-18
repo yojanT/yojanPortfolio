@@ -1,0 +1,19 @@
+.main{
+    padding: 20rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    &_sobremi {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+        gap: 1rem;
+        align-items: center;
+        background-color: aliceblue;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+                  }
+}

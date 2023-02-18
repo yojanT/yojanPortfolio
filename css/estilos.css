@@ -4,10 +4,7 @@
     box-sizing: border-box;
 }
 
-
 header{
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     background-color: #009ddf;
     padding: 2% 5%;
@@ -15,7 +12,7 @@ header{
     max-width: 100%;
 }
 
-header_menu{
+.header_menu{
     display: flex
 }
 
@@ -58,6 +55,7 @@ h2{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width:100%;
 }
 
 .main_sobremi {
@@ -70,8 +68,9 @@ h2{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
        }
-       footer{
+       .footer{
         display: flex;
         background-color: #009ddf;
         padding: 3rem;
@@ -142,6 +141,7 @@ h2{
   padding: 3px;
   padding-top: 1px;
   padding-bottom: 1px;
+  border-radius: 1px;
 
 }
 

@@ -1,0 +1,42 @@
+@import "./Parciales/reset";
+@import "./Parciales/header";
+@import"./Parciales/main";
+@import"./Parciales/footer";
+@import"./Parciales/portfolio";
+@import "./Parciales/hero";
+@import "./Parciales/media-queries";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.white{
+    color: white;
+}
+
+h1{
+    color: #009ddf;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h2{
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

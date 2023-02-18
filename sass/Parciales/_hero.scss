@@ -1,0 +1,34 @@
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 4rem;
+    
+    &_title{
+        text-align: center;
+    }
+    &_form{
+        background-color: #009ddf;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    &_form_containbtn{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    &_form_btn{
+        display: flex;
+        flex-direction: row-reverse;
+         color: #ffffff;
+         background-color: #021016;
+         padding: 3px;
+         padding-top: 1px;
+         padding-bottom: 1px;
+         border-radius: 1px;
+       
+       }
+}
